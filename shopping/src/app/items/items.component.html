@@ -1,0 +1,19 @@
+<div class = "container">
+    <div *ngFor = "let item of items">
+        <div class = "col-md-3">
+            {{ item.name }}
+        </div>
+        <div class = "col-md-3">
+            {{ item.category }}
+        </div>
+        <div class = "col-md-3">
+            {{ items.quantity }}
+        </div>
+        <div class = "col-md-3">
+            <input type= "button" 
+            (click) = "deleteItem(item._id)" 
+            value="Delete"
+            class="btn btn-danger">
+        </div>
+    </div>
+</div>
